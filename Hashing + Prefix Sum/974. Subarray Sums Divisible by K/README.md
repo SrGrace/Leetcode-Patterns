@@ -18,6 +18,6 @@ Output: 0
 ```
 Constraints:
 
--   `1 <= nums.length <= 3 * 104`
--   `-104 <= nums[i] <= 104`
--   `2 <= k <= 104`
+-   `1 <= nums.length <= 3 * 10^4`
+-   `-104 <= nums[i] <= 10^4`
+-   `2 <= k <= 10^4`

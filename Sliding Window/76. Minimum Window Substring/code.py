@@ -3,22 +3,15 @@ class Solution:
         from collections import defaultdict
         hash_map = defaultdict(int) 
 
-        # Populate the hash_map with the frequency of each character in t
-        # Time Complexity: O(|T|) to iterate over string t, Space Complexity: O(|T|)
+
         for ch in t:
             hash_map[ch] += 1
 
-        # Initialize counter to track the number of characters needed to form a valid window
         counter = len(t)
 
-        # Initialize two pointers, begin and end, to represent the sliding window
         begin, end = 0, 0
-
-        # Initialize d to store the length of the smallest valid window found so far
-        # Set to infinity initially to handle the case where no valid window is found
         d = float('inf')
 
-        # Initialize head to store the starting index of the smallest valid window
         head = 0
 
         # Slide the end pointer to expand the window
